@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import {ChatInput} from './components/ChatInput'
 import ChatMessageComp from './components/ChatMessageComp'
-
-import Appicon from '/ChatGPT Image Sep 10, 2026, 05_39_13 PM.png';
+import {Menubar} from './components/Sidebar.jsx'
 import './App.css'
 
 
@@ -23,13 +22,7 @@ function App(){
     <>
             
       <div className="js-chat-sidebar">
-
-        <div className="js-chat-header-content">
-          <img className="js-chat-icon"
-          src={Appicon}/>
-          <h2 className="js-chat-title">Chatbot</h2>
-        </div>
-
+          <Menubar/>
       </div>
           
 
