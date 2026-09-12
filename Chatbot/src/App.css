@@ -1,0 +1,42 @@
+.js-chat-container{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+
+.js-chat-sidebar{
+  position:fixed;
+  top:0;
+  left:0;
+
+  width:220px;
+  height:100vh;
+  padding:20px;
+
+  display:flex;
+  flex-direction:column;
+}
+.js-chat-title{
+  font-size:22px;
+  font-weight:bold;
+  color:#111827;
+  margin:0px;
+}
+
+.js-chat-icon{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+.js-chat-header-content{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+}

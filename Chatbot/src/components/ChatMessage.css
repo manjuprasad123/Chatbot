@@ -1,0 +1,23 @@
+.js-user-msg{
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom:20px;
+  align-items:start;
+}
+.js-robot-msg{
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom:20px;
+  align-items:start;
+}
+
+.js-msg-text{
+  background-color:rgb(238,238,238);
+  padding:15px 20px;
+  border-radius:10px;
+  font-size:15px;
+  margin-right:10px;
+  margin-left:10px;
+
+  max-width:300px;
+}
