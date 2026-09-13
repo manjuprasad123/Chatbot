@@ -8,32 +8,107 @@
 
   display:flex;
   flex-direction:column;
-  border-right:1px solid rgb(230, 230, 230)
+
+  border-right:1px solid rgb(230, 230, 230);
+  transition: width 0.3s ease;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .sidebar-extend{
   width: 220px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .sidebar-shrink{
-  width: 30px;
-  padding: 20px 10px;
+  width: 50px;
+  padding: 20px 2px;
   align-items: center;
+  overflow: visible;
 }
 
-.sidebar-shrink .js-chat-title{
-  display: none;
-}
-
-
-.js-chat-title{
-  font-size:22px;
-  font-weight:bold;
-  color:#111827;
-  margin:0px;
-}
-
-.js-chat-header-content{
-  display:flex;
+.js-chat-header-content {
+  display: flex;
   align-items: center;
-  gap: 10px;
+  height: 48px;          
+  padding: 0 8px;
+  margin-bottom: 12px; 
+  position: relative; 
+}
+.js-chat-header-content:first-child {
+  gap: 14px;
+}
+.js-chat-header-content:not(:first-child) {
+  gap: 6px;
+}
+
+.js-chat-title-btn,
+.js-chat-btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;       
+  border: none;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.js-chat-title,
+.js-chat {
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+.js-chat {
+  margin: 0;
+  font-size: 16px;
+  color: #111827;
+}
+
+.js-chat-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.sidebar-shrink .js-chat-title,
+.sidebar-shrink .js-chat {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar-shrink .js-chat-header-content {
+  justify-content: center;
+  padding: 0;
+  gap: 0;
+  width: 100%;
+}
+
+.sidebar-title-icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 2px;
+  object-fit: contain;
+}
+.sidebar-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  padding: 0;
+}
+
+.sidebar-shrink .js-chat-header-content:hover .js-chat{
+  position:absolute;
+  left:55px;
+  background:#111827;
+  color:white;
+  padding:5px 8px;
+  border-radius:5px;
+  opacity:1;
+  width:auto;
 }
