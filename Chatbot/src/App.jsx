@@ -8,7 +8,11 @@ import './App.css'
 function App(){
   const [ChatMessages,setChatMessages]=useState(     //React.useState() is used to create a state variable in a functional component. It returns an array with two elements: the current state value and a function to update that state value.
     [
-            
+      {
+        id:"welcome",
+        sender:"robot",
+        message:"Welcome to the Chatbot! Send a message using the textbox below."
+      }    
     ]
   );
         

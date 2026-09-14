@@ -1,6 +1,6 @@
 import './ChatMessage.css';
 
-export function ChatMessage({message,sender}){
+export function ChatMessage({message,sender,id}){
   // const msg=props.message;
   // const sen=props.sender;
 
@@ -18,6 +18,8 @@ export function ChatMessage({message,sender}){
   //Guard Operator && works as if-statement
   return(           
     <div 
+    id={id==="welcome"?"welcome":undefined}
+
     className={
       sender==="robot"
       ?"js-robot-msg"

@@ -22,4 +22,11 @@
   flex-direction:column;
 }
 
+#welcome .js-msg-text{
+  background-color: white;
+  color: rgb(127, 126, 126);
+  font-size: 16px;
+  max-width: 600px;
+}
+
 

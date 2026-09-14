@@ -20,6 +20,7 @@ function ChatMessageComp({ChatMessages}){
             message={chatmsg.message}
             sender={chatmsg.sender}
             key={chatmsg.id}
+            id={chatmsg.id}
           />
         );
       })}

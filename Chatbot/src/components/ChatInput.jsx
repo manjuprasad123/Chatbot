@@ -19,8 +19,11 @@ export function ChatInput({ChatMessages,setChatMessages})    //Creating Componen
   function SendMessage(){
     if (!InputText.trim()) return;
 
+    const messages=ChatMessages.length===1 && ChatMessages[0].id==="welcome"?
+    []:ChatMessages;
+
     const newChatMsg=[
-      ...ChatMessages,
+      ...messages,
       {
         message:InputText,
         sender:"user",
